@@ -38,5 +38,9 @@ jobs:
       # Install the ACE CLI package
       - name: Install ACE CLI
         run: |
-          npm install -g @ibm-watson-iis/ace-cli
+          curl -L -O https://github.com/ibm-watson-iis/ace-cli/releases/download/1.4.0/ace-cli-linux-x64.tar.gz
+          tar -xvf ace-cli-linux-x64.tar.gz
+          chmod +x ace
+          sudo mv ace /usr/local/bin
+
 
