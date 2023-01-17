@@ -28,19 +28,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
-
-      #Install the required version of NodeJS
-      - name: Install Node JS
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-            
-      # Install the ACE CLI package
-      - name: Install ACE CLI
-        run: |
-          curl -L -O https://github.com/ibm-watson-iis/ace-cli/releases/download/1.4.0/ace-cli-linux-x64.tar.gz
-          tar -xvf ace-cli-linux-x64.tar.gz
-          chmod +x ace
-          sudo mv ace /usr/local/bin
-
+      - name: Docker pull ACE image
+        run: docker pull cp.icr.io/cp/appc/ace:12.0.7.0-r1@sha256:376b4008901f5306af3e4235a54f3b6a27e18cfe00a22cc6d673fd1d95b95231
 
