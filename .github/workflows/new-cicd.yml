@@ -28,8 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Download ACE image
         run: |
-          echo "listing all files"
-          ls -al
+          pwd
           ########################################################################
           # 
           # We move the source to the build directory to make sure it is not in
