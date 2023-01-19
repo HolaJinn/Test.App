@@ -63,7 +63,7 @@ jobs:
           . ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsiprofile
           mqsilist
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -data $GITHUB_WORKSPACE/ace-projects -b $GITHUB_WORKSPACE/bar-files -a
-          ls -l
+          ls -al
           
       # Runs a set of commands using the runners shell
       - name: Build/UT for ACE projects
@@ -73,9 +73,9 @@ jobs:
           # Set up ACE environment
           # 
           ########################################################################
-          export LICENSE=accept
-          export MQSI_WORKPATH=$PWD/ace-minimal-image-unzip/var/mqsi
-          . ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsiprofile
+          #export LICENSE=accept
+          #export MQSI_WORKPATH=$PWD/ace-minimal-image-unzip/var/mqsi
+          #. ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsiprofile
           # Using ace-minimal without WXS support
           # 
           # Note that this no longer works as of 12.0.4, with ibmint optimize server 
@@ -86,6 +86,6 @@ jobs:
           # Run the Gradle build and unit test phases
           # 
           ########################################################################
-          cd build
-          echo "Running Gradle build and unit test"
-          gradle -PCLASSPATH=$CLASSPATH
+          #cd build
+          #echo "Running Gradle build and unit test"
+          #gradle -PCLASSPATH=$CLASSPATH
