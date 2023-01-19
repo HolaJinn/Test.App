@@ -66,7 +66,11 @@ jobs:
           #ls -al ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path ./Test.App --compile-maps-and-schemas --project --overrides-file ./Test.App/properties/DEV.properties --output-bar-file ./testbar.bar
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsicreatebar -data ./Test.App -b testbar.bar
-          ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -w . -a testbar.bar -o ./build/Test.App/Test_Flow.msgflow
+          
+          ### This command works ###
+          #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -w . -a testbar.bar -o ./build/Test.App/Test_Flow.msgflow
+          
+          ibmint package --input-path ./build/Test.App --output-bar-file ./testbar.bar  
           pwd
           ls -al
           echo "listing"
