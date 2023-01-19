@@ -67,7 +67,7 @@ jobs:
           #ls -al ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path ./Test.App --compile-maps-and-schemas --project --overrides-file ./Test.App/properties/DEV.properties --output-bar-file ./testbar.bar
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsicreatebar -data ./Test.App -b testbar.bar
-          ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -w ./Test.App -a testbar.bar
+          ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -w $MQSI_WORKPATH -a testbar.bar -o ./Test.App/Test_Flow.msgflow
       # Runs a set of commands using the runners shell
       #- name: Build/UT for ACE projects
         #run: |
