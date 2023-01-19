@@ -70,7 +70,7 @@ jobs:
           ### This command works ###
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -w . -a testbar.bar -o ./build/Test.App/Test_Flow.msgflow
           
-          ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path ./build/Test.App --output-bar-file ./testbar.bar  
+          ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path ./build/Test.App --output-bar-file ./testbar.bar --do-not-compile-java
           pwd
           ls -al
           echo "listing"
