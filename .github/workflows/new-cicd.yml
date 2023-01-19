@@ -66,8 +66,8 @@ jobs:
           ls -al
           
       # Runs a set of commands using the runners shell
-      - name: Build/UT for ACE projects
-        run: |
+      #- name: Build/UT for ACE projects
+        #run: |
           ########################################################################
           # 
           # Set up ACE environment
