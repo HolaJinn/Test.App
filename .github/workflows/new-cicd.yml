@@ -64,9 +64,9 @@ jobs:
           . ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsiprofile
           mqsilist
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -data $GITHUB_WORKSPACE/ace-projects -b $GITHUB_WORKSPACE/bar-files -a
-          #ls -al
+          ls -al ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path ./Test.App --compile-maps-and-schemas --project --overrides-file ./Test.App/properties/DEV.properties --output-bar-file ./testbar.bar
-          ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsicreatebar -data ./Test.App -b testbar.bar
+          #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsicreatebar -data ./Test.App -b testbar.bar
           
       # Runs a set of commands using the runners shell
       #- name: Build/UT for ACE projects
