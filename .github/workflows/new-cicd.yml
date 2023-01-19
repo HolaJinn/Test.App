@@ -68,7 +68,7 @@ jobs:
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsicreatebar -data ./Test.App -b testbar.bar
           
           ### This command works ###
-          ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -w . -a testbar.bar -o build/Test.App/Test_Flow.msgflow -k buil/Test.App
+          ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -w . -a testbar.bar -o build/Test.App/Test_Flow.msgflow -k build/Test.App
           
           ls -al ./build/Test.App
           
