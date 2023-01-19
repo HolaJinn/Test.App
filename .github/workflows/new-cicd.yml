@@ -62,7 +62,8 @@ jobs:
           export MQSI_WORKPATH=$PWD/ace-minimal-image-unzip/var/mqsi
           . ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsiprofile
           mqsilist
-          ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -data $GITHUB_WORKSPACE/ace-projects -b $GITHUB_WORKSPACE/bar-files -a
+          #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -data $GITHUB_WORKSPACE/ace-projects -b $GITHUB_WORKSPACE/bar-files -a
+          ls -l
           
       # Runs a set of commands using the runners shell
       - name: Build/UT for ACE projects
