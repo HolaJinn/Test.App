@@ -70,7 +70,7 @@ jobs:
           pwd
           ls -al
           echo "listing"
-          ls -al ./Test.App
+          ls -al ./build
           ls -al $MQSI_WORKPATH
       # Runs a set of commands using the runners shell
       #- name: Build/UT for ACE projects
