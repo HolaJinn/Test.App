@@ -81,11 +81,7 @@ jobs:
           git config --global user.email "benamor.yacine@yahoo.fr"
           git add testbar.bar
           git commit -m "Add testbar.bar"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.TOKEN }}
-          branch: master
+          git push
           
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path ./build/Test.App/ --output-bar-file ./testbar.bar --do-not-compile-java
           #pwd
