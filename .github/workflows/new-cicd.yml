@@ -81,7 +81,8 @@ jobs:
           git config --local user.name "HolaJinn"
           git add testbar.bar
           git commit -m "Add testbar.bar"
-          git push
+          git remote add origin https://github.com/HolaJinn/Test.App.git
+          git push -u origin master
           
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path ./build/Test.App/ --output-bar-file ./testbar.bar --do-not-compile-java
           #pwd
