@@ -84,7 +84,7 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TOKEN }}
           branch: master
           
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path ./build/Test.App/ --output-bar-file ./testbar.bar --do-not-compile-java
