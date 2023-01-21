@@ -79,7 +79,7 @@ jobs:
           
           git config --global user.name "HolaJinn"
           git config --global user.email "HolaJinn@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.TOKEN }}@github.com/HolaJinn/Test.App
+          #git remote set-url origin https://x-access-token:${{ secrets.TOKEN }}@github.com/HolaJinn/Test.App
           git add testbar.bar
           git commit -m "Add testbar.bar"
           git push
