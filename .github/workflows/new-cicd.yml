@@ -78,7 +78,7 @@ jobs:
           ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsiapplybaroverride -b testbar.bar -p build/Test.App/properties/QA.properties -o ./testbar_QA.bar -r
           
           git config --global user.name "HolaJinn"
-          git config --global user.email "benamor.yacine@yahoo.fr"
+          git config --global user.email "HolaJinn@users.noreply.github.com"
           git add testbar.bar
           git commit -m "Add testbar.bar"
           git push
