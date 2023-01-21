@@ -70,13 +70,14 @@ jobs:
           ### This command works ###
           ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsipackagebar -w . -a testbar.bar -o build/Test.App/Test_Flow.msgflow -k build/Test.App
           
-          ls -al ./build/Test.App
+          ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/mqsiapplybaroverride -b ./testbar.bar -p build/Test.App/properties/DEV.propertie -o ./testbar_DEV.bar -r
+    
           
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path ./build/Test.App/ --output-bar-file ./testbar.bar --do-not-compile-java
-          pwd
+          #pwd
           ls -al
-          echo "listing"
-          ls -al ./build/Test.App
+          #echo "listing"
+          #ls -al ./build/Test.App
           #ls -al $MQSI_WORKPATH
       # Runs a set of commands using the runners shell
       #- name: Build/UT for ACE projects
