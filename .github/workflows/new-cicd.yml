@@ -81,7 +81,11 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add testbar.bar
           git commit -m "Add testbar.bar"
-          git push -u origin master
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
           
           #ace-minimal-image-unzip/opt/ibm/ace-12/server/bin/ibmint package --input-path ./build/Test.App/ --output-bar-file ./testbar.bar --do-not-compile-java
           #pwd
